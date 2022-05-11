@@ -1,0 +1,71 @@
+.header {
+
+    a{
+        color:$navyBlue;
+    }
+    
+    nav {
+        padding: 1.5rem 0;
+        font-family: 'Lato', sans-serif;
+        
+
+    }
+
+
+    &__logo {
+        img {
+            width: 12.5rem;
+        }
+    }
+
+    &__links {
+        a {
+            color: $navyBlue;
+            font-size: 0.875rem;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+}
+
+.top_nav {
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+
+
+    .topLeft:not(:first-child) {
+        &::before {
+            content: ' | ';
+            padding: 0 0.625rem;
+        }
+    }
+
+    .topRight:not(:first-child) {
+        &::before {
+            content: ' | ';
+            padding: 0 0.625rem;
+        }
+
+    }
+}
+
+.bottom_nav {
+    margin-bottom: 1.5rem;
+    border-top: 0.125rem solid #e6e6e6;
+    border-bottom: 0.125rem solid #e6e6e6;
+    padding: 1.25rem 0rem;
+}
+
+.sign-up {
+    img {
+        width: 1.25rem;
+    }
+}
+
+.fa-search {
+    color: $navyBlue;
+    margin-left: 0.3125rem;
+}

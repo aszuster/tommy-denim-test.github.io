@@ -1,0 +1,75 @@
+html {
+    font: size 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "heroiccondensed";
+    src: url("fonts/heroiccondensed-black-webfont.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "heroiccondensed";
+    src: url("fonts/heroiccondensed-bold-webfont.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "heroiccondensed";
+    src: url("fonts/heroiccondensed-heavy-webfont.woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "heroiccondensed";
+    src: url("fonts/heroiccondensed-medium-webfont.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Flexbox
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.container {
+
+    max-width: 81.25rem;
+    margin: auto;
+}
